@@ -5,13 +5,17 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { VillainComponent } from './villain/villain.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { VillainDetailComponent } from './villain-detail/villain-detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
-    VillainComponent
+    VillainComponent,
+    HeroDetailComponent,
+    VillainDetailComponent
   ],
   imports: [
     BrowserModule,

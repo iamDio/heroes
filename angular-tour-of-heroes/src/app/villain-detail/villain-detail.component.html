@@ -1,0 +1,11 @@
+<div *ngIf ="villain">
+    <h2>{{villain.name | uppercase}} Details: </h2>
+    <div><span>id: </span>{{villain.id}}</div>
+    <div><span>super power: </span>{{villain.superPower}}</div>
+  <div>
+    <label>
+      name: 
+        <input [(ngModel)]="villain.name">
+    </label>
+</div>
+</div>

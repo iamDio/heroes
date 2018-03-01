@@ -1,9 +1,9 @@
-<div>
-  <label> villain 
-    <input [(ngModel)]= 'villain.name' placeholder="villain name">
-  </label>
-</div>
+<h2>My Villains</h2>
+<ul class="heroes">
+  <li *ngFor="let villain of Villains"
+  [class.selected-hero]="villain == selectedVillain"
+  (click)="onSelect(villain)" >
+  <span class="badge">{{villain.id}}</span> {{villain.name | uppercase}}</li>
+</ul>
 
-<div><span>id: </span>{{villain.id}}</div>
-<div><span>name: </span>{{villain.name |uppercase}}</div>
-<div><span>superpower: </span>{{villain.superPower}}</div>
+<app-villain-detail [villain]="selectedVillain"></app-villain-detail>
