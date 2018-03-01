@@ -7,8 +7,8 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { VillainComponent } from './villain/villain.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { VillainDetailComponent } from './villain-detail/villain-detail.component';
-
-
+import { HeroService } from './hero.service'
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +21,7 @@ import { VillainDetailComponent } from './villain-detail/villain-detail.componen
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [HeroService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
