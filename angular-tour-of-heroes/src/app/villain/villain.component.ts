@@ -7,13 +7,8 @@ import { Villain } from '../villain';
   styleUrls: ['./villain.component.css']
 })
 export class VillainComponent implements OnInit {
-  villain: Villain = {
-    id:1,
-    name:'Monster',
-    superPower: 'summon spirts from hades'
-  }
-
-
+  VILLAIN: Villain;
+  
   constructor() { }
 
   ngOnInit() {
